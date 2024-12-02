@@ -16,10 +16,10 @@ re: clean $(NAME)
 test:
 	./$(NAME)
 
-abort:
+abort: clean
 	git reset --hard HEAD@{1}
 
-merge:
+update: clean
 	git checkout master && git merge next
 
 norm:
