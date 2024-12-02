@@ -5,7 +5,7 @@ C_FILES = ../get_next_line.c ../get_next_line_utils.c main.c
 
 all: $(NAME) test norm
 
-$(NAME): $(C_FILES) get_next_line.h test.h
+$(NAME): $(C_FILES)
 	$(CC) -o $(NAME) $(CFLAGS) $(C_FILES)
 
 clean:
