@@ -3,6 +3,6 @@
 
 int main()
 {
-	get_next_line(1);
+	printf("%s\n", get_next_line(1));
 	return (0);
 }
