@@ -1,6 +1,6 @@
 C_FILES = t/main.c get_next_line_utils.c get_next_line.c
 
-all: norm test
+all: norm test merge_with_master
 
 test: run
 	./run
@@ -14,7 +14,11 @@ run: $(C_FILES) get_next_line.h
 clean:
 	run
 
-re:
-	@until make $(all); do sleep 5; done
+merge_with_master:
+	@git push home develop
+	@git checkout master
+	@git merge feature
+	@git push school master
+	@git push home master
 
 .PHONY: test all clean norm
