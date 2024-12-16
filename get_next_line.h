@@ -5,9 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: hhaciogl <hhaciogl@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/12/16 18:54:22 by hhaciogl          #+#    #+#             */
-/*   Updated: 2024/12/16 18:58:46 by hhaciogl         ###   ########.fr       */
+/*   Created: 2024/12/16 19:28:57 by hhaciogl          #+#    #+#             */
+/*   Updated: 2024/12/16 19:40:10 by hhaciogl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef GET_NEXT_LINE_H
+# define GET_NEXT_LINE_H
 
+#endif
