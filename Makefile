@@ -1,6 +1,6 @@
 C_FILES = t/main.c get_next_line_utils.c get_next_line.c
 
-all: norm test merge_with_master clean
+all: norm test clean merge_with_master
 
 test: run
 	./run
