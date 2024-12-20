@@ -1,5 +1,5 @@
 char *get_next_line(int fd)
 {	
 	(void)fd;
-	return ("ok");
+	return ((void *)0);
 }
