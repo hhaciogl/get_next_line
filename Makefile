@@ -1,5 +1,6 @@
 check_files = \
 			checks/check_ifiles.c \
+			checks/check_fun.c \
 			checks/main.c
 
 program_files = \
