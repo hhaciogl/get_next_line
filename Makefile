@@ -1,7 +1,8 @@
 check_files = \
 			checks/check_ifiles.c \
 			checks/check_fun.c \
-			checks/main.c
+			checks/main.c \
+			checks/check_return_err.c
 
 program_files = \
 			get_next_line.c \
