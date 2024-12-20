@@ -4,16 +4,15 @@ check_files = \
 
 program_files = \
 			get_next_line.c \
-			get_next_line_utils.c \
-			get_next_line.h
+			get_next_line_utils.c
 
-run: gnl
-	./gnl
+run: ok
+	./ok
 
-gnl: $(check_files) $(program_files)
-	cc -Wall -Wextra -Werror -o $@ $<
+ok: $(check_files) $(program_files)
+	cc -Wall -Wextra -Werror -o $@ $^
 
 clean:
-	rm gnl
+	rm ok
 
-.PHONY: clean
+.PHONY: clean run
