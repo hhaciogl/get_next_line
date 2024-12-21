@@ -3,8 +3,8 @@
 int main(void)
 {
 	//checks invoked here
-	assert(check_ifiles());
-	assert(check_fun());
-	assert(check_return_err());
+	assert(check_if_source_files_exist());
+	assert(check_function_prototype());
+	assert(check_error_return_null());
 	return (0);
 }

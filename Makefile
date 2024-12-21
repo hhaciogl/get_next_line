@@ -1,8 +1,4 @@
-check_files = \
-			checks/check_ifiles.c \
-			checks/check_fun.c \
-			checks/main.c \
-			checks/check_return_err.c
+check_files = $(wildcard checks/*.c)
 
 program_files = \
 			get_next_line.c \

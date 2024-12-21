@@ -1,6 +1,6 @@
 #include "../get_next_line.h"
 
-int check_return_err(void)
+int check_error_return_null(void)
 {
 	char *result;
 

@@ -2,8 +2,8 @@
 # define CHECK_H
 
 // check prototypes go here
-int check_ifiles(void);
-int check_fun(void);
-int check_return_err(void);
+int check_if_source_files_exist(void);
+int check_function_prototype(void);
+int check_error_return_null(void);
 
 #endif

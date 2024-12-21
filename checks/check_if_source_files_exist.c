@@ -8,7 +8,7 @@
 char *get_actual(void);
 char *get_expect(void);
 
-int check_ifiles()
+int check_if_source_files_exist()
 {
 	char *actual;
 	char *expect;
