@@ -1,6 +1,5 @@
 ZZ = $(wildcard zz_*.c)
 
-
 FILE_COUNT = $(words $(wildcard zz*.c))
 
 NAME = start_testing
@@ -15,7 +14,7 @@ run:
 	@clear && echo 1..$(words $(ZZ)) && ./$(NAME)
 
 $(NAME): $(ZZ_SRC) $(PROG_SRC)
-	cc -Werror -Wextra -Wall $^ -o $@
+	cc $(BUF) -Werror -Wextra -Wall $^ -o $@
 
 newtest:
 	echo "void ok(int expr, char *msg);\n\
