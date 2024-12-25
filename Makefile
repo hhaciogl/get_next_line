@@ -9,7 +9,7 @@ ZZ_SRC =  zz.c $(ZZ)
 
 PROG_SRC =  get_next_line_utils.c get_next_line.c
 
-all: $(NAME) RUN
+all: $(NAME) run
 	
 run:
 	@clear && echo 1..$(words $(ZZ)) && ./$(NAME)

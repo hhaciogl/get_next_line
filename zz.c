@@ -7,11 +7,13 @@ int is(char *str1, char *str2);
 
 void ok_1();
 void ok_2();
+void ok_3();
 
 int main()
 {
 	ok_1();
 	ok_2();
+	ok_3();
 	return (0);
 }
 
