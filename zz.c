@@ -8,12 +8,14 @@ int is(char *str1, char *str2);
 void ok_1();
 void ok_2();
 void ok_3();
+void ok_4();
 
 int main()
 {
 	ok_1();
 	ok_2();
 	ok_3();
+	ok_4();
 	return (0);
 }
 
