@@ -5,13 +5,19 @@
 
 char *get_next_line(int fd)
 {
-	(void)fd;
-	char *buf;
-	printf("%i", BUFFER_SIZE);
+	char	*buf;
+	ssize_t	bytes; 
+	
 	buf = malloc(BUFFER_SIZE + 1);
 	if (NULL == buf)
 	{
 		return (NULL);
 	}
+	bytes = read(fd, buf, BUFFER_SIZE);
+	if (0 >= bytes)
+	{
+		return (NULL);
+	}
+	buf[BUFFER_SIZE + 1] = '\0';
 	return (buf);
 }
