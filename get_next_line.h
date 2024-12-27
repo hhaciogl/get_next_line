@@ -5,6 +5,8 @@
 # define BUFFER_SIZE 8
 #endif
 
+
 char	*get_next_line(int fd);
+char	*ft_search_nl(char * str);
 
 #endif
