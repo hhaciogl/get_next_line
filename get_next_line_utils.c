@@ -1,11 +1,18 @@
 #include "get_next_line.h"
 
-char *ft_search_nl(char * str)
+ssize_t ft_search_nl(char * str)
 {
-	if ('\n' == str[BUFFER_SIZE-1])
+	ssize_t	i;
+
+	i = 0;
+	while (str[i])
 	{
-		return "\n"; 
+		if ('\n' == str[i])
+		{
+			return (i);
+		}
+		i++;
 	}
-	return ((void *)0);
+	return (-1);
 }
 

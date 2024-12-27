@@ -1,12 +1,11 @@
-#include <unistd.h>
-#include <stdlib.h>
 #include "get_next_line.h"
 
 char *get_next_line(int fd)
 {
 	char	*buf;
 	ssize_t	bytes; 
-	
+	ssize_t nl;
+
 	buf = malloc(BUFFER_SIZE + 1);
 	if (NULL == buf)
 	{
@@ -18,5 +17,12 @@ char *get_next_line(int fd)
 		return (NULL);
 	}
 	buf[BUFFER_SIZE + 1] = '\0';
+
+	nl = ft_search_nl(buf);
+	if (0 <= nl && nl != BUFFER_SIZE - 1)
+	{
+		buf[nl + 1] = '\0';
+	}
 	return (buf);
 }
+
